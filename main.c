@@ -7,9 +7,12 @@ void calc(int days) {
 	int months = (days % 365) / 30;
 	int days_left = (days % 365) % 30;
 
-	printf("\n%d days is:\n%d years\n%d months\n%d days\n\n", days, years, months, days_left);
+	printf(
+		"\n%d days is:\n%d years\n%d months\n%d days\n\n",
+		days, years, months, days_left
+	);
 }
 
 int main(int argc, char *argv[]) {
-	calc(atoi(argv[1]));
+	calc(atoi(argv[1])); //* atoi = ASCII to int
 }
